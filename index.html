@@ -1,3 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Style the buttons that are used to open and close the accordion panel */
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+}
+</style>
+</head>
+
+<body>
+
+<button class="accordian">Section 1</button>
+<div class="panel">
+
+<p>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Results of the THE/WSJ US College Rankings now up on the site: <a href="https://t.co/f8pv3QLsVF">https://t.co/f8pv3QLsVF</a> <a href="https://t.co/ducei4giMV">pic.twitter.com/ducei4giMV</a></p>&mdash; TimesHigherEducation (@timeshighered) <a href="https://twitter.com/timeshighered/status/786220410333302784">October 12, 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>
+</div>
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    }
+}
+</script>
 
 <!-- interest in the term Princeton Review over time 2004- present -->
 
@@ -9,7 +72,4 @@
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Results of the THE/WSJ US College Rankings now up on the site: <a href="https://t.co/f8pv3QLsVF">https://t.co/f8pv3QLsVF</a> <a href="https://t.co/ducei4giMV">pic.twitter.com/ducei4giMV</a></p>&mdash; TimesHigherEducation (@timeshighered) <a href="https://twitter.com/timeshighered/status/786220410333302784">October 12, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<button class="accordian">Section 1</button>
-<div class="panel">
- <p> Lorem ipsum...<p>
- </div>
+
