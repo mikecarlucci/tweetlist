@@ -21,7 +21,11 @@ div.panel {
     background-color: white;
 }
 
-p {
-    font-family: "Georgia", serif;
+p.serif {
+    font-family: "Times New Roman", Times, serif;
     font-size: 14px;
+}
+
+p.sansserif {
+    font-family: Arial, Helvitica, sans-serif;
 }
