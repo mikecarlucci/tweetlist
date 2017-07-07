@@ -40,10 +40,6 @@ div.panel {
 </head>
 <body>
 
-<div id="London" class="tabcontent">
-  <h3>London</h3>
-  <p>London is the capital city of England.</p>
-</div>
 
 <button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen">London</button>
 
@@ -124,9 +120,7 @@ div.panel {
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
 
-<button class="tablink" onclick="openCity('Paris', this, 'green')">Paris</button>
-<button class="tablink" onclick="openCity('Tokyo', this, 'blue')">Tokyo</button>
-<button class="tablink" onclick="openCity('Oslo', this, 'orange')">Oslo</button>
+
 
 
 <script>
@@ -169,8 +163,8 @@ for (i = 0; i < acc.length; i++) {
 }
 
 // Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
+document.getElementById("defaultOpen").click()
+;</script>
 
 
 <!--
